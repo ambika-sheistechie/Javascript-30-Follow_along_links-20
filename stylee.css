@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+      color:#fff;
+    min-height: 100vh;
+    margin: 0; /* Important! */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+      linear-gradient(45deg, rgb(25, 151, 255) 0%, hsla(340, 100%, 55%, 0) 70%),
+      linear-gradient(135deg, hsla(225, 95%, 50%, 1) 100%, hsla(225, 95%, 50%, 0) 80%);
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.5;
+    position: relative;
+    text-align: justify;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgba(0,0,0,0.05);
+    border-radius: 20px;
+  }
+  
+  .highlight {
+    transition: all 0.2s;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    background: rgb(0, 0, 0);
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .menu {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin:50px 0;
+  }
+  
+  .menu a {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 20px;
+    color: rgb(189, 188, 188);
+  }
+  
